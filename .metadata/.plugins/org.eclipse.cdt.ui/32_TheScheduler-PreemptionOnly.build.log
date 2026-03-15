@@ -1,0 +1,23 @@
+15:30:04 **** Incremental Build of configuration Debug for project 32_TheScheduler-PreemptionOnly ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "32_TheScheduler-PreemptionOnly.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32f411 FreeRTOS Workspace\32_TheScheduler-PreemptionOnly\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="32_TheScheduler-PreemptionOnly.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 32_TheScheduler-PreemptionOnly.elf
+ 
+arm-none-eabi-size  32_TheScheduler-PreemptionOnly.elf 
+arm-none-eabi-objdump -h -S 32_TheScheduler-PreemptionOnly.elf  > "32_TheScheduler-PreemptionOnly.list"
+arm-none-eabi-objcopy  -O ihex 32_TheScheduler-PreemptionOnly.elf  "32_TheScheduler-PreemptionOnly.hex"
+   text	   data	    bss	    dec	    hex	filename
+  17236	     16	  20408	  37660	   931c	32_TheScheduler-PreemptionOnly.elf
+arm-none-eabi-objcopy  -O binary 32_TheScheduler-PreemptionOnly.elf  "32_TheScheduler-PreemptionOnly.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 32_TheScheduler-PreemptionOnly.hex
+Finished building: 32_TheScheduler-PreemptionOnly.bin
+ 
+ 
+Finished building: 32_TheScheduler-PreemptionOnly.list
+ 
+
+15:30:14 Build Finished. 0 errors, 0 warnings. (took 10s.261ms)
+

@@ -1,0 +1,10 @@
+15:25:36 **** Build of configuration Debug for project 3_Task_Parameters ****
+make -j12 all 
+arm-none-eabi-size  3_Task_Parameters.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19792	     32	  20480	  40304	   9d70	3_Task_Parameters.elf
+Finished building: default.size.stdout
+ 
+
+15:25:36 Build Finished. 0 errors, 0 warnings. (took 563ms)
+

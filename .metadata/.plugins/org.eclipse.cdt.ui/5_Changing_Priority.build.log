@@ -1,0 +1,23 @@
+17:54:26 **** Build of configuration Debug for project 5_Changing_Priority ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "5_Changing_Priority.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32f411 FreeRTOS Workspace\5_Changing_Priority\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_Changing_Priority.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_Changing_Priority.elf
+ 
+arm-none-eabi-size  5_Changing_Priority.elf 
+arm-none-eabi-objdump -h -S 5_Changing_Priority.elf  > "5_Changing_Priority.list"
+arm-none-eabi-objcopy  -O ihex 5_Changing_Priority.elf  "5_Changing_Priority.hex"
+   text	   data	    bss	    dec	    hex	filename
+  19928	     16	  20504	  40448	   9e00	5_Changing_Priority.elf
+arm-none-eabi-objcopy  -O binary 5_Changing_Priority.elf  "5_Changing_Priority.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 5_Changing_Priority.hex
+Finished building: 5_Changing_Priority.bin
+ 
+ 
+Finished building: 5_Changing_Priority.list
+ 
+
+17:54:29 Build Finished. 0 errors, 0 warnings. (took 3s.59ms)
+

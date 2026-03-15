@@ -1,0 +1,8 @@
+../Core/Src/main.c:30:5:main	1
+../Core/Src/main.c:73:6:digital_sensor_task	1
+../Core/Src/main.c:86:6:analog_sensor_task	1
+../Core/Src/main.c:100:6:lcd_task	1
+../Core/Src/main.c:112:6:SystemClock_Config	3
+../Core/Src/main.c:160:13:MX_GPIO_Init	1
+../Core/Src/main.c:174:6:HAL_TIM_PeriodElapsedCallback	2
+../Core/Src/main.c:192:6:Error_Handler	1

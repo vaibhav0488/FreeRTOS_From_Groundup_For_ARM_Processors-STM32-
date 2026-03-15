@@ -1,0 +1,5 @@
+../Core/Src/uart.c:7:6:USART2_UART_TX_Init	1
+../Core/Src/uart.c:34:6:USART2_UART_RX_Init	1
+../Core/Src/uart.c:60:5:uart_write	2
+../Core/Src/uart.c:68:6:USART2_read	2
+../Core/Src/uart.c:74:5:__io_putchar	1

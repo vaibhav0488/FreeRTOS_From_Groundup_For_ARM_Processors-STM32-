@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;42_CMSIS_RTOS_osMutex&apos; to &apos;43_CMSIS_RTOS_osMutex&apos;" description="Rename resource &apos;42_CMSIS_RTOS_osMutex&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/42_CMSIS_RTOS_osMutex" name="43_CMSIS_RTOS_osMutex" stamp="1772338518245" updateReferences="true"/>
+</session>

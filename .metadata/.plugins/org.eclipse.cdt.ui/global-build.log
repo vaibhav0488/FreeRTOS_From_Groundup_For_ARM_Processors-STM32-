@@ -1,0 +1,19 @@
+21:34:55 **** Build of configuration Debug for project 10_BlockingATask ****
+make -j12 all 
+arm-none-eabi-gcc -o "10_BlockingATask.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\My Workspace\STM32f411 FreeRTOS Workspace\10_BlockingATask\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="10_BlockingATask.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 10_BlockingATask.elf
+ 
+arm-none-eabi-size  10_BlockingATask.elf 
+arm-none-eabi-objdump -h -S 10_BlockingATask.elf  > "10_BlockingATask.list"
+   text	   data	    bss	    dec	    hex	filename
+  19816	     16	  20488	  40320	   9d80	10_BlockingATask.elf
+arm-none-eabi-objcopy  -O ihex 10_BlockingATask.elf  "10_BlockingATask.hex"
+arm-none-eabi-objcopy  -O binary 10_BlockingATask.elf  "10_BlockingATask.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 10_BlockingATask.hex
+Finished building: 10_BlockingATask.bin
+ 
+ 
+Finished building: 10_BlockingATask.list
+ 

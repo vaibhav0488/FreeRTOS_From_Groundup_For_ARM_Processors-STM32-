@@ -1,0 +1,10 @@
+09:57:36 **** Incremental Build of configuration Debug for project 43_CMSIS_RTOS_osMutex ****
+make -j12 all 
+arm-none-eabi-size  43_CMSIS_RTOS_osMutex.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26364	    108	  20868	  47340	   b8ec	43_CMSIS_RTOS_osMutex.elf
+Finished building: default.size.stdout
+ 
+
+09:57:37 Build Finished. 0 errors, 0 warnings. (took 594ms)
+

@@ -1,0 +1,22 @@
+17:56:02 **** Build of configuration Debug for project 36_CMSIS_RTOS_ThreadPriority ****
+make -j12 all 
+arm-none-eabi-gcc -o "36_CMSIS_RTOS_ThreadPriority.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\My Workspace\STM32f411 FreeRTOS Workspace\36_CMSIS_RTOS_ThreadPriority\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="36_CMSIS_RTOS_ThreadPriority.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 36_CMSIS_RTOS_ThreadPriority.elf
+ 
+arm-none-eabi-size  36_CMSIS_RTOS_ThreadPriority.elf 
+arm-none-eabi-objdump -h -S 36_CMSIS_RTOS_ThreadPriority.elf  > "36_CMSIS_RTOS_ThreadPriority.list"
+arm-none-eabi-objcopy  -O ihex 36_CMSIS_RTOS_ThreadPriority.elf  "36_CMSIS_RTOS_ThreadPriority.hex"
+   text	   data	    bss	    dec	    hex	filename
+  20792	     16	  20512	  41320	   a168	36_CMSIS_RTOS_ThreadPriority.elf
+arm-none-eabi-objcopy  -O binary 36_CMSIS_RTOS_ThreadPriority.elf  "36_CMSIS_RTOS_ThreadPriority.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 36_CMSIS_RTOS_ThreadPriority.hex
+Finished building: 36_CMSIS_RTOS_ThreadPriority.bin
+ 
+ 
+Finished building: 36_CMSIS_RTOS_ThreadPriority.list
+ 
+
+17:56:04 Build Finished. 0 errors, 0 warnings. (took 2s.633ms)
+

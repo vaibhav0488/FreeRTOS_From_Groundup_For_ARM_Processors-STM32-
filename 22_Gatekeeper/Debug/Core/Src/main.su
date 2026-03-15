@@ -1,0 +1,8 @@
+../Core/Src/main.c:30:5:main	16	static
+../Core/Src/main.c:73:6:digital_sensor_task	16	static
+../Core/Src/main.c:86:6:analog_sensor_task	16	static
+../Core/Src/main.c:100:6:lcd_task	16	static
+../Core/Src/main.c:112:6:SystemClock_Config	88	static
+../Core/Src/main.c:160:13:MX_GPIO_Init	16	static
+../Core/Src/main.c:174:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:192:6:Error_Handler	4	static,ignoring_inline_asm
