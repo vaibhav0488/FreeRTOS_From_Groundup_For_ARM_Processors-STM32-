@@ -8,12 +8,12 @@ Throughout these projects, different FreeRTOS APIs and mechanisms are implemente
 
 Key concepts demonstrated in this repository include:
 
-1.FreeRTOS task creation and scheduling
-2.Task priorities and context switching
-3.Inter-task communication using queues
-4.Synchronization using semaphores and mutexes
-5.Software timers and delays
-6.Interrupt handling in FreeRTOS applications
-7.Integration of FreeRTOS with STM32 HAL and peripherals
+1. FreeRTOS task creation and scheduling
+2. Task priorities and context switching
+3. Inter-task communication using queues
+4. Synchronization using semaphores and mutexes
+5. Software timers and delays
+6. Interrupt handling in FreeRTOS applications
+7. Integration of FreeRTOS with STM32 HAL and peripherals
 
 These projects are intended for learning, experimentation, and reference for embedded systems developers who want to understand how FreeRTOS works on ARM Cortex-M microcontrollers and how to build multitasking real-time applications. The course itself focuses on building real-time embedded applications, understanding RTOS internals, and mastering resource and task management features of FreeRTOS.
